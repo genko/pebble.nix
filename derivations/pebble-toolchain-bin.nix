@@ -18,7 +18,7 @@ stdenv.mkDerivation (finalAttrs: {
     (rec {
       x86_64-linux = fetchzip {
         url = "https://rebble-sdk.s3-us-west-2.amazonaws.com/pebble-sdk-${finalAttrs.version}-linux64.tar.bz2";
-        hash = "3503be2ced6fe529f558e94a543515a0da8df12204ee58519388ae857f494c92";
+        hash = "14jc95zqbbl8jd8mivh44bqqvnm02lsm8jp9b3sjkrbgxlnbw0rm";
       };
       x86_64-darwin = fetchzip {
         url = "https://rebble-sdk.s3-us-west-2.amazonaws.com/pebble-sdk--${finalAttrs.version}-mac.tar.bz2";
