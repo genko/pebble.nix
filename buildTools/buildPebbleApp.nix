@@ -42,7 +42,7 @@ let
 
   pebble-sdk = pkgs.fetchzip {
     url = "https://rebble-sdk.s3-us-west-2.amazonaws.com/pebble-sdk-4.6-rc2-linux64.tar.bz2";
-    sha256 = "3503be2ced6fe529f558e94a543515a0da8df12204ee58519388ae857f494c92";
+    sha256 = "";
   };
 
   stringNotEmpty = str: builtins.isString str && str != "";
