@@ -41,8 +41,8 @@ let
   );
 
   pebble-sdk = pkgs.fetchzip {
-    url = "https://binaries.rebble.io/sdk-core/release/sdk-core-4.3.tar.bz2";
-    sha256 = "0p6x76rq5v9rb3j2fjdz1s2553n1yf5v2yhzxxp7g5220hmsk40j";
+    url = "https://rebble-sdk.s3-us-west-2.amazonaws.com/pebble-sdk-4.6-rc2-linux64.tar.bz2";
+    sha256 = "3503be2ced6fe529f558e94a543515a0da8df12204ee58519388ae857f494c92";
   };
 
   stringNotEmpty = str: builtins.isString str && str != "";
