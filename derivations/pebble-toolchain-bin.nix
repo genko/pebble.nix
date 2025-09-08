@@ -12,16 +12,16 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "pebble-toolchain-bin";
-  version = "4.5";
+  version = "4.6-rc2";
 
   src =
     (rec {
       x86_64-linux = fetchzip {
-        url = "https://developer.rebble.io/s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-${finalAttrs.version}-linux64.tar.bz2";
-        hash = "sha256-LLZX3S/OaxE2wlk/lL1+HfSenwgDWGE7EG2kbiff44Y=";
+        url = "https://rebble-sdk.s3-us-west-2.amazonaws.com/pebble-sdk-${finalAttrs.version}-linux64.tar.bz2";
+        hash = "3503be2ced6fe529f558e94a543515a0da8df12204ee58519388ae857f494c92";
       };
       x86_64-darwin = fetchzip {
-        url = "https://developer.rebble.io/s3.amazonaws.com/assets.getpebble.com/pebble-tool/pebble-sdk-${finalAttrs.version}-mac.tar.bz2";
+        url = "https://rebble-sdk.s3-us-west-2.amazonaws.com/pebble-sdk--${finalAttrs.version}-mac.tar.bz2";
         hash = "sha256-DgT75r0pxxyL1csxEvyDC4KO+Yv8sSfA5LSVXCVefZ0=";
       };
       aarch64-darwin = x86_64-darwin;
