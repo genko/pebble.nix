@@ -2,7 +2,7 @@
   description = "A new Pebble app";
 
   inputs = {
-    pebble.url = "github:pebble-dev/pebble.nix";
+    pebble.url = "github:genko/pebble.nix";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
